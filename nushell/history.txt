@@ -1,0 +1,108 @@
+config nu
+nvim
+vim .config/startup.sh
+config nu
+nu
+config nu
+cd .config/
+ls
+cd nushell/
+ls
+ls nushell/
+rm -rf nushell/
+ls
+config nu
+cd ../
+code .
+ls
+cd .config/
+ls
+nvim
+cd .config/
+cd ../Development/
+ls
+git clone git@github.com:omerxx/dotfiles.git
+ls
+cd dotfiles/
+brew install stow
+stow .
+cd ~/.config
+ls
+cd ghostty/
+ls
+mv config config.old
+cd ../
+ls
+cd nushell/
+ls
+mv config.nu config.nu.old
+mv env.nu env.nu.old
+cd ~/Development/
+cd dotfiles/
+stow .
+ls
+nvim
+config nu
+vim .config/nushell/nvim/init.lua
+cd .config/nushell/nvim/
+ls
+cd lua/config
+ls
+vim lazy.lua
+nvim
+$MYVIMRC
+echo $MYVIMRC
+:echo $MYVIMRC
+exit
+echo "hello"
+echo $MYVIMRC
+ls -al
+cd /opt/homebrew/
+ls
+cd Cellar/neovim/
+ls
+cd 0.11.3/
+ls
+ls bin/
+ls bin/nvim
+ls lib/
+ls
+ls -al
+ls -al share/
+ls -al bin/
+ls
+cd ~
+ls -al
+ls .vim
+ls .config/
+rm .config/aerospace
+ls
+ls -al
+ls -al .config
+cd .config
+ls
+rm hammerspoon
+rm karabiner
+rm nix
+rm nix-darwin
+rm nvim
+rm sketchybar
+rm skhd
+rm ssh
+rm starship
+rm tmux
+rm wezterm
+rm zellij
+rm zshrc
+rm ~
+ls
+ls -al
+rm -rf ~
+ls
+rm "~"
+ls
+echo stdpath('config')
+nvim
+nvim --clean
+ls -al nushell/
+ls -al nushell/nvim/
