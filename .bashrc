@@ -7,6 +7,7 @@ alias ls='eza --icons'
 alias lsa='eza -lha --group-directories-first --icons=auto'
 alias hyprc='nvim ~/.config/hypr'
 alias clip='xclip -selection clipboard'
+alias wms='~/Development/WMS.jessey.fransen/'
 
 . "$HOME/.local/share/../bin/env"
 
@@ -17,3 +18,4 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # mise
 export PATH="$HOME/.local/share/mise/shims:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
