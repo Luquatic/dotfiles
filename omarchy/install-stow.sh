@@ -6,5 +6,6 @@ yay -S --noconfirm --needed stow
 
 echo -e "\nStowing dotfiles...\n"
 cd "$(dirname "$0")/.."
-stow -v .
+stow -v --adopt .
+git reset --hard
 cd "$ORIGINAL_DIR"
