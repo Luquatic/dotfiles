@@ -15,7 +15,7 @@
     "clock",
     "custom/separator",
     "custom/weather",
-    "custom/update",
+    "custom/update"
   ],
   "modules-right": [
     "group/tray-expander",
@@ -23,7 +23,7 @@
     "pulseaudio",
     "cpu",
     "network",
-    "battery",
+    "battery"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -40,21 +40,21 @@
       "8": "8",
       "9": "9",
       "10": "0",
-      "active": "󱓻",
+      "active": "󱓻"
     },
     "persistent-workspaces": {
       "1": [],
       "2": [],
       "3": [],
       "4": [],
-      "5": [],
-    },
+      "5": []
+    }
   },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
     "on-click": "omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space",
+    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
   "custom/update": {
     "format": "",
@@ -62,47 +62,47 @@
     "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
     "tooltip-format": "Omarchy update available",
     "signal": 7,
-    "interval": 3600,
+    "interval": 3600
   },
   "custom/separator": {
-    "format": "|",
+    "format": "|"
   },
   "cpu": {
     "interval": 1,
     "format": "󰍛 {usage:>2}%",
-    "on-click": "omarchy-launch-or-focus-tui btop",
+    "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "temperature": {
     "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input",
     "format": " {temperatureC}°",
-    "on-click": "omarchy-launch-or-focus-tui btop",
+    "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "custom/nvidia": {
     "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,nounits,noheader | sed 's/\\([0-9]\\+\\), \\([0-9]\\+\\)/\\1% 🌡️\\2°C/g'",
     "format": "🎟 {}",
     "interval": 1,
-    "on-click": "omarchy-launch-or-focus-tui btop",
+    "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "group/hardware": {
     "orientation": "inherit",
-    "modules": ["cpu", "temperature", "custom/nvidia"],
+    "modules": ["cpu", "temperature", "custom/nvidia"]
   },
   "clock": {
     "format": "{:%H:%M}",
     "tooltip": false,
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "custom/day": {
     "format": "{}",
     "exec": "date +%d",
     "interval": 60,
     "tooltip": false,
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "custom/weather": {
     "exec": "$HOME/.config/waybar/weather.py waybar",
     "restart-interval": 300,
-    "return-type": "json",
+    "return-type": "json"
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -115,7 +115,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "omarchy-launch-wifi",
+    "on-click": "omarchy-launch-wifi"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -124,7 +124,7 @@
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "format-full": "󰂅",
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
@@ -133,8 +133,8 @@
     "on-click": "omarchy-menu power",
     "states": {
       "warning": 20,
-      "critical": 10,
-    },
+      "critical": 10
+    }
   },
   "bluetooth": {
     "format": "",
@@ -143,7 +143,7 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "omarchy-launch-bluetooth",
+    "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
@@ -153,29 +153,29 @@
     "scroll-step": 5,
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""],
-    },
+      "default": ["", "", ""]
+    }
   },
   "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 600,
-      "children-class": "tray-group-item",
+      "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"],
+    "modules": ["custom/expand-icon", "tray"]
   },
   "custom/expand-icon": {
     "format": " ",
-    "tooltip": false,
+    "tooltip": false
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
-    "return-type": "json",
+    "return-type": "json"
   },
   "tray": {
     "icon-size": 12,
-    "spacing": 12,
-  },
+    "spacing": 12
+  }
 }
