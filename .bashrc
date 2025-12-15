@@ -9,6 +9,7 @@ source ~/.local/share/omarchy/default/bash/rc
 alias ls='eza --icons'
 alias lsa='eza -lha --group-directories-first --icons=auto'
 alias hyprc='nvim ~/.config/hypr'
+alias audioc='omarchy-launch-or-focus-tui wiremix'
 alias clip='xclip -selection clipboard'
 alias wms='~/Development/WMS.jessey.fransen/'
 
