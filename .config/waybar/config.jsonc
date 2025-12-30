@@ -19,9 +19,8 @@
   ],
   "modules-right": [
     "group/tray-expander",
-    "bluetooth",
-    "pulseaudio",
     "cpu",
+    "pulseaudio",
     "network",
     "battery"
   ],
@@ -146,7 +145,7 @@
     "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon} ",
     "on-click": "omarchy-launch-or-focus-tui wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
@@ -162,7 +161,7 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"]
+    "modules": ["custom/expand-icon", "bluetooth", "tray"]
   },
   "custom/expand-icon": {
     "format": " ",
